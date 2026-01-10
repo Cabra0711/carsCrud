@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #c5c6c6;
+}
+nav{
+    background-color: white;
+}
+.contenedor-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.search-icon{
+    margin-top: -30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.btn-corazon{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.btn-corazon i:hover{
+    color: red;
+    transform: scale(1.2);
+    transition: all 0.3s ease
+}
+
+.boton-favoritos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-favoritos p{
+    opacity: 0.8;
+    color: black;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.precio p{
+    font-size: 20px;
+}
+    
