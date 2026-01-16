@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-        console.log("¡Ahora sí prendió esta máquina!");
 
         const botonesLike = document.querySelectorAll('.btn-corazon');
         const aviso = document.getElementById('toast-aviso');
