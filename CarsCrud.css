@@ -7,9 +7,41 @@ body{
     height: 100vh;
     background-color: #c5c6c6;
 }
-nav{
+
+.navBar{
     background-color: white;
 }
+.search{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.hero-card {
+    border-radius: 16px;
+    height: 360px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-left {
+    background: url("./IMG/Fondocar1.png") center / cover no-repeat;
+}
+
+.bg-right {
+    background: url("./IMG/fondocar2.png") center / cover no-repeat;
+}
+
+.car-img {
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    width: 65%;
+    max-width: 420px;
+}
+
 .contenedor-navegacion{
     display: flex;
     justify-content: space-between;
@@ -55,4 +87,102 @@ nav{
 .precio p{
     font-size: 20px;
 }
-    
+.car-card {
+    border-radius: 16px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.car-img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.car-img-wrapper img {
+    max-width: 90%;
+    height: auto;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.rent-btn {
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+
+@media (max-width: 768px) {
+    .hero-card {
+        height: auto;
+        padding-bottom: 180px;
+    }
+
+    .car-img {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .Logo {
+        justify-content: center !important;
+    }
+
+    .Profile {
+        margin-right: 1rem;
+    }
+    .navBar{
+        margin-left: -3rem;
+        margin-right: -3rem;
+        margin-top: -1rem;
+    }
+    .search{
+        margin-left: 2rem;
+        margin-right: 2rem ;
+    }
+}
+
+@media (max-width: 767px){
+    .Profile{
+        margin-left: -50px;
+    }
+    .navBar{
+        margin-left: -1rem;
+        margin-right: -1rem;
+        margin-top: -1rem;
+    }
+    .search{
+        background-color: transparent;
+    }
+}
+
+
+.btn-corazon button {
+    color: #90a3bf; 
+    transition: all 0.3s ease;
+}
+
+.corazon-rojo {
+    color: #ff4d4d !important;
+}
+
+.aviso-guardado {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3563E9;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: none;
+    z-index: 9999;
+}
